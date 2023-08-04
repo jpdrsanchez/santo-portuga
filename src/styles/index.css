@@ -1,3 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import './fonts.base.css';
+@import 'tailwindcss/components';
+@import './sections.components.css';
+@import 'tailwindcss/utilities';
