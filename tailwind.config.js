@@ -24,6 +24,14 @@ module.exports = {
       fontFamily: {
         'sans': ['Poppins', ...defaultTheme.fontFamily.sans],
         'serif': ['Recoleta', ...defaultTheme.fontFamily.serif],
+      },
+      screens: {
+        'sm-down': {
+          max: '640px'
+        },
+        'md-down': {
+          max: '767px'
+        }
       }
     },
   },

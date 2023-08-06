@@ -10,6 +10,7 @@
   <header class="absolute top-0 left-0 w-full pt-12">
     <div class="container flex items-center justify-between">
       <a href="./" class="flex items-center justify-center">
+        <span class="sr-only">Santo Portuga</span>
         <svg width="176" height="67" viewBox="0 0 176 67" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_1_976)">
             <path d="M25.7224 9.7649C25.7224 4.27175 31.0106 0 38.4304 0C46.3628 0 49.9758 4.83499 49.9758 8.68905C49.9758 11.0369 48.5819 12.6823 46.2628 12.6823C40.3745 12.6823 43.6687 2.30358 36.7114 2.30358C33.7923 2.30358 32.167 4.13252 32.167 6.4361C32.167 14.3214 50.8572 15.3087 50.8572 25.2191C50.8572 30.668 45.2439 34.56 37.7303 34.56C29.3354 34.56 25.7161 29.6744 25.7161 25.3077C25.7161 22.5865 27.1101 20.9854 29.3354 20.9854C35.3175 20.9854 32.0233 32.2058 39.2618 32.2058C41.9059 32.2058 44.4125 30.6553 44.4125 27.9341C44.4125 20.517 25.7224 20.0487 25.7224 9.7649Z" fill="white"/>
@@ -34,9 +35,14 @@
           </defs>
         </svg>          
       </a>
-      <div>
-        <nav>
-          <ul class="flex items-center gap-8">
+      <nav class="flex items-center">
+        <button class="flex lg:hidden mobile-button">
+          <span></span>
+          <span></span>
+          <span class="sr-only">Abrir Menu Mobile</span>
+        </button>
+        <div class="hidden lg:block">
+          <ul class="flex items-center gap-6 xl:gap-8">
             <li class="relative">
               <a class="menu-link" href="#">
                 <div>
@@ -78,12 +84,53 @@
               </a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   </header>
   <main class="intro-section">
-    
+    <div class="container">
+      <h1 class="font-serif text-white text-5xl md:text-[70px] font-bold md:leading-[70px] uppercase pb-3 md-down:text-center">
+        Doren <span class="text-interface-primary">Ipsum</span> dolor
+      </h1>
+      <p class="site-text w-full max-w-[616px] md-down:text-center">
+        Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora
+      </p>
+      <nav class="flex items-center gap-8 pt-14 md-down:justify-center flex-wrap">
+        <a href="#" class="site-button site-button--yellow">Explore</a>
+        <a href="#" class="site-button site-button--white site-button--animated">
+          <div>
+            <span>Faça sua reserva</span>
+            <span>Faça sua reserva</span>
+          </div>
+        </a>
+      </nav>
+    </div>
   </main>
+  <section class="py-20 relative">
+    <div class="container relative grid md:grid-cols-2 gap-[30px] items-center xl:items-start">
+      <div class="relative md-down:order-2">
+        <img src="./assets/images/space-one.webp" alt="Espaço Santo Portuga" class="rounded-2xl aspect-[569/522] block w-5/6 md:w-full md:max-w-[300px] lg:max-w-[380px] xl:max-w-[569px] h-auto object-cover object-center ml-auto" />
+        <img src="./assets/images/space-two.webp" alt="Espaço Santo Portuga" class="rounded-2xl aspect-[318/414] block w-3/5 md:w-full md:max-w-[200px] xl:max-w-[318px] h-auto object-cover object-center -mt-[200px] xl:-mt-[354px]" />
+      </div>
+      <div class="relative md:pl-9">
+        <h2 class="site-title site-title--black md-down:text-center">
+          Nosso <span>Espaço</span>
+        </h2>
+        <p class="site-text text-black font-light max-w-[616px] tracking-wider pb-[60px] md-down:text-center">
+          Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+          <br /><br />
+          Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+        </p>
+        <a href="#" class="site-button site-button--black site-button--animated md-down:mx-auto">
+          <div>
+            <span>Faça sua reserva</span>
+            <span>Faça sua reserva</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <img src="./assets/images/detail-one.svg" alt="" aria-hidden="true" class="absolute right-0 -bottom-[174px] pointer-events-none" />
+  </section>
 </body>
 </html>
