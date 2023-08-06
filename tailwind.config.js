@@ -11,7 +11,8 @@ module.exports = {
         interface: {
           primary: '#fccc13',
           secondary: '#161b21',
-          tertiary: '#0e1317'
+          tertiary: '#0e1317',
+          quarternary: '#090d10'
         },
       },
       container: {

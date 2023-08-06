@@ -22,7 +22,7 @@
   @font-face {
     font-family: 'Poppins';
     src: local('Poppins Thin'), local('Poppins-Thin'),
-      url('./assets/fonts/poppins/Poppins-Thin.ttf') format('truetype');
+      url('./assets/fonts/Poppins-Thin.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
   }
@@ -30,7 +30,7 @@
   @font-face {
     font-family: 'Poppins';
     src: local('Poppins Light'), local('Poppins-Light'),
-      url('./assets/fonts/poppins/Poppins-Light.ttf') format('truetype');
+      url('./assets/fonts/Poppins-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
   }
@@ -38,7 +38,7 @@
   @font-face {
     font-family: 'Poppins';
     src: local('Poppins Regular'), local('Poppins-Regular'),
-      url('./assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+      url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
   }
@@ -46,7 +46,7 @@
   @font-face {
     font-family: 'Poppins';
     src: local('Poppins Medium'), local('Poppins-Medium'),
-      url('./assets/fonts/poppins/Poppins-Medium.ttf') format('truetype');
+      url('./assets/fonts/Poppins-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
   }
@@ -54,7 +54,7 @@
   @font-face {
     font-family: 'Poppins';
     src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
-      url('./assets/fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+      url('./assets/fonts/Poppins-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
   }
@@ -62,7 +62,7 @@
   @font-face {
     font-family: 'Poppins';
     src: local('Poppins Bold'), local('Poppins-Bold'),
-      url('./assets/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+      url('./assets/fonts/Poppins-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
   }
@@ -70,7 +70,7 @@
   @font-face {
     font-family: 'Poppins';
     src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'),
-      url('./assets/fonts/poppins/Poppins-ExtraBold.ttf') format('truetype');
+      url('./assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
   }
@@ -78,7 +78,7 @@
   @font-face {
     font-family: 'Poppins';
     src: local('Poppins Black'), local('Poppins-Black'),
-      url('./assets/fonts/poppins/Poppins-Black.ttf') format('truetype');
+      url('./assets/fonts/Poppins-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
   }
