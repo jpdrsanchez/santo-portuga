@@ -179,4 +179,14 @@
       border-radius: 1rem;
     }
   }
+
+  .left-carousel-bg {
+    @apply absolute top-0 left-0 h-full w-[388px] z-30 pointer-events-none;
+    background: linear-gradient(90deg, #0E1317 0%, rgba(14, 19, 23, 0) 100%);
+  }
+
+  .right-carousel-bg {
+    @apply absolute top-0 right-0 h-full w-[388px] z-30 pointer-events-none;
+    background: linear-gradient(-90deg, #0E1317 0%, rgba(14, 19, 23, 0) 100%);
+  }
 }
