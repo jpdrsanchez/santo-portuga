@@ -189,4 +189,9 @@
     @apply absolute top-0 right-0 h-full w-[388px] z-30 pointer-events-none;
     background: linear-gradient(-90deg, #0E1317 0%, rgba(14, 19, 23, 0) 100%);
   }
+
+  .form-box {
+    @apply rounded-2xl relative bg-white p-20;
+    box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.15);
+  }
 }
