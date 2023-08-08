@@ -198,4 +198,14 @@
   .form-input {
     @apply block w-full outline-0 text-[22px] text-black font-sans font-light pb-[14px] border-b border-interface-primary placeholder:text-black;
   }
+
+  .nav-button {
+    @apply outline-0 w-16 h-16 flex items-center justify-center bg-white p-0 rounded-full;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.35);
+  }
+
+  .second-detail {
+    @apply block max-w-full w-[914px] absolute bottom-0 right-1/2 -z-10 pointer-events-none;
+    transform: translateX(-46px);
+  }
 }

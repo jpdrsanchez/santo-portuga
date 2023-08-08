@@ -26,3 +26,10 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs
     loop: true,
   })
 })()
+
+;(() => {
+  const dishSwiper = new Swiper('.dish-carousel', {
+    effect: "cards",
+    loop: true,
+  })
+})()
