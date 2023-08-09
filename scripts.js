@@ -1,6 +1,9 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 
 (() => {
+  const prevButton = document.querySelector('[data-all="prev"]')
+  const nextButton = document.querySelector('[data-all="next"]')
+
   const fullSwiper = new Swiper('.full-carousel', {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -17,13 +20,66 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs
       }
     }
   })
+
+  prevButton.addEventListener('click', (event) => {
+    event.preventDefault()
+    fullSwiper.slidePrev()
+  })
+
+  nextButton.addEventListener('click', (event) => {
+    event.preventDefault()
+    fullSwiper.slideNext()
+  })
 })()
 
 ;(() => {
+  const prevButton = document.querySelector('[data-single="prev"]')
+  const nextButton = document.querySelector('[data-single="next"]')
+  const title = document.querySelector('[data-single="title"]')
+  const text = document.querySelector('[data-single="text"]')
+  const image = document.querySelector('[data-single="image"]')
+
   const singleSwiper = new Swiper('.single-space', {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
+    on: {
+      init: (swiper) => {
+        const activeSlide = document.querySelector('.single-space .swiper-slide.swiper-slide-active')
+        if (activeSlide?.dataset?.title) {
+          title.innerHTML = activeSlide.dataset.title;
+        }
+        if (activeSlide?.dataset?.text) {
+          text.innerHTML = activeSlide.dataset.text;
+        }
+        if (activeSlide?.dataset?.image) {
+          image.setAttribute('src', activeSlide.dataset.image);
+        }
+      },
+      activeIndexChange: (swiper) => {
+        const activeSlides = document.querySelectorAll('.single-space .swiper-slide')
+
+        if (activeSlides?.[swiper.activeIndex]?.dataset?.title) {
+          title.innerHTML = activeSlides[swiper.activeIndex].dataset.title;
+        }
+        if (activeSlides?.[swiper.activeIndex]?.dataset?.text) {
+          text.innerHTML = activeSlides[swiper.activeIndex].dataset.text;
+        }
+        if (activeSlides?.[swiper.activeIndex]?.dataset?.image) {
+          image.setAttribute('src', activeSlides[swiper.activeIndex].dataset.image);
+        }
+      }
+    }
+  })
+
+  prevButton.addEventListener('click', (event) => {
+    event.preventDefault()
+    singleSwiper.slidePrev()
+  })
+
+  nextButton.addEventListener('click', (event) => {
+    event.preventDefault()
+    singleSwiper.slideNext()
   })
 })()
 

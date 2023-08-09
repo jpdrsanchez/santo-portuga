@@ -134,49 +134,65 @@
     </div>
     <img src="./assets/images/detail-one.svg" alt="" aria-hidden="true" class="absolute fixed-bg-one -bottom-[174px] pointer-events-none -z-10" />
   </section>
-  <section class="left-container pb-14 md:pb-20 relative z-50 overflow-hidden">
+  <section class="left-container pb-14 md:pb-20 relative z-50 overflow-hidden right-container">
     <div class="slide-hider"></div>
-    <div class="w-full max-w-[1000px] h-[664px] relative z-50">
-      <img src="./assets/images/open-space.webp" class="w-full h-full object-cover object-center rounded-xl" />
+    <div class="w-full xl:max-w-[872px] 2xl:max-w-[1000px] h-[664px] relative z-50">
+      <button class="nav-button absolute top-1/2 -translate-y-1/2 z-50 left-0 -translate-x-3 md:-translate-x-1/2" data-single="prev">
+        <svg width="21" height="34" viewBox="0 0 21 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13998 18.2063L16.7133 32.4616C17.6198 33.24 19.0066 33.24 19.86 32.4616C20.7133 31.6832 20.7133 30.3696 19.86 29.591L5.8334 16.7954L19.86 3.99979C20.7133 3.17281 20.7133 1.90778 19.86 1.12922C19.0067 0.350809 17.62 0.350809 16.7133 1.12922L1.13998 15.3358C0.286672 16.1628 0.286672 17.4278 1.13998 18.2064L1.13998 18.2063Z" fill="black"/>
+        </svg>              
+      </button>
+      <button class="nav-button absolute top-1/2 -translate-y-1/2 z-50 right-0 translate-x-3 md:translate-x-1/2" data-single="next">
+        <svg width="21" height="34" viewBox="0 0 21 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.86 18.2063L4.28671 32.4616C3.38017 33.24 1.99344 33.24 1.13998 32.4616C0.28668 31.6832 0.28668 30.3696 1.13998 29.591L15.1666 16.7954L1.13998 3.99979C0.286676 3.17281 0.286676 1.90778 1.13998 1.12922C1.99328 0.350809 3.37996 0.350809 4.28671 1.12922L19.86 15.3358C20.7133 16.1628 20.7133 17.4278 19.86 18.2064L19.86 18.2063Z" fill="black"/>
+        </svg>              
+      </button>
+      <div class="thumb-shadow site">
+        <h3 class="site-title site-title--white thumb-title" data-single="title">
+          Espaço <span>Aberto</span>
+        </h3>
+        <p class="site-text tracking-normal max-w-[616px]" data-single="text">Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora </p>
+      </div>
+      <img src="./assets/images/open-space.webp" class="w-full h-full object-cover object-center rounded-xl" data-single="image" />
     </div>
     <div class="swiper single-space">
       <div class="swiper-wrapper">
-        <div class="swiper-slide w-[358px] h-[664px] relative z-20" data-title="Espaço <span>Aberto</span>" data-text="Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora">
+        <div class="swiper-slide w-[358px] h-[664px] relative z-20" data-image="./assets/images/open-space.webp" data-title="Espaço <span>Aberto</span>" data-text="Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora">
           <h3 class="slide-name">
             Espaço<br />Aberto
           </h3>
           <div class="absolute w-full h-full slide-shadow  rounded-xl"></div>
           <img src="./assets/images/open-space.webp" class="w-full h-full object-cover object-center rounded-xl" />
         </div>
-        <div class="swiper-slide w-[358px] h-[664px] relative z-20" data-title="<span>Bar</span>" data-text="Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora">
+        <div class="swiper-slide w-[358px] h-[664px] relative z-20" data-image="./assets/images/bar.webp" data-title="<span>Bar</span>" data-text="Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora">
           <h3 class="slide-name">
             Bar
           </h3>
           <div class="absolute w-full h-full slide-shadow  rounded-xl"></div>
           <img src="./assets/images/bar.webp" class="w-full h-full object-cover object-center rounded-xl" />
         </div>
-        <div class="swiper-slide w-[358px] h-[664px] relative z-20" data-title="Área <span>Kids</span>" data-text="Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora">
+        <div class="swiper-slide w-[358px] h-[664px] relative z-20" data-image="./assets/images/kids.webp" data-title="Área <span>Kids</span>" data-text="Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora">
           <h3 class="slide-name">
             Área<br />Kids
           </h3>
           <div class="absolute w-full h-full slide-shadow  rounded-xl"></div>
           <img src="./assets/images/kids.webp" class="w-full h-full object-cover object-center rounded-xl" />
         </div>
-        <div class="swiper-slide w-[358px] h-[664px] relative z-20" data-title="Espaço <span>Aberto</span>" data-text="Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora">
+        <div class="swiper-slide w-[358px] h-[664px] relative z-20" data-image="./assets/images/open-space.webp" data-title="Espaço <span>Aberto</span>" data-text="Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora">
           <h3 class="slide-name">
             Espaço<br />Aberto
           </h3>
           <div class="absolute w-full h-full slide-shadow  rounded-xl"></div>
           <img src="./assets/images/open-space.webp" class="w-full h-full object-cover object-center rounded-xl" />
         </div>
-        <div class="swiper-slide w-[358px] h-[664px] relative z-20" data-title="<span>Bar</span>" data-text="Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora">
+        <div class="swiper-slide w-[358px] h-[664px] relative z-20" data-image="./assets/images/bar.webp" data-title="<span>Bar</span>" data-text="Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora">
           <h3 class="slide-name">
             Bar
           </h3>
           <div class="absolute w-full h-full slide-shadow  rounded-xl"></div>
           <img src="./assets/images/bar.webp" class="w-full h-full object-cover object-center rounded-xl" />
         </div>
-        <div class="swiper-slide w-[358px] h-[664px] relative z-20" data-title="Área <span>Kids</span>" data-text="Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora">
+        <div class="swiper-slide w-[358px] h-[664px] relative z-20" data-image="./assets/images/kids.webp" data-title="Área <span>Kids</span>" data-text="Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora">
           <h3 class="slide-name">
             Área<br />Kids
           </h3>
@@ -304,6 +320,16 @@
   </section>
   <section class="relative py-14 md:py-20 bg-interface-tertiary z-50 overflow-hidden">
     <div class="px-5 2xl:px-7 relative">
+      <button class="nav-button absolute top-1/2 -translate-y-1/2 left-7 z-50" data-all="prev">
+        <svg width="21" height="34" viewBox="0 0 21 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13998 18.2063L16.7133 32.4616C17.6198 33.24 19.0066 33.24 19.86 32.4616C20.7133 31.6832 20.7133 30.3696 19.86 29.591L5.8334 16.7954L19.86 3.99979C20.7133 3.17281 20.7133 1.90778 19.86 1.12922C19.0067 0.350809 17.62 0.350809 16.7133 1.12922L1.13998 15.3358C0.286672 16.1628 0.286672 17.4278 1.13998 18.2064L1.13998 18.2063Z" fill="black"/>
+        </svg>              
+      </button>
+      <button class="nav-button absolute top-1/2 -translate-y-1/2 right-7 z-50" data-all="next">
+        <svg width="21" height="34" viewBox="0 0 21 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.86 18.2063L4.28671 32.4616C3.38017 33.24 1.99344 33.24 1.13998 32.4616C0.28668 31.6832 0.28668 30.3696 1.13998 29.591L15.1666 16.7954L1.13998 3.99979C0.286676 3.17281 0.286676 1.90778 1.13998 1.12922C1.99328 0.350809 3.37996 0.350809 4.28671 1.12922L19.86 15.3358C20.7133 16.1628 20.7133 17.4278 19.86 18.2064L19.86 18.2063Z" fill="black"/>
+        </svg>              
+      </button>
       <div class="left-carousel-bg"></div>
       <div class="right-carousel-bg"></div>
       <div class="swiper full-carousel z-10">

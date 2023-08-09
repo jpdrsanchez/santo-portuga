@@ -156,6 +156,30 @@
     }
   }
 
+  .right-container {
+    @apply pr-5;
+
+    @media (screen(sm)) {
+      padding-right: calc((100% - theme(screens.sm)) / 2);
+    }
+
+    @media (screen(md)) {
+      padding-right: calc((100% - theme(screens.md)) / 2);
+    }
+
+    @media (screen(lg)) {
+      padding-right: calc((100% - theme(screens.lg)) / 2);
+    }
+
+    @media (screen(xl)) {
+      padding-right: calc((100% - theme(screens.xl)) / 2);
+    }
+
+    @media (screen(2xl)) {
+      padding-right: calc((100% - theme(screens.2xl)) / 2);
+    }
+  }
+
   .fixed-bg-one {
     @media (max-width: 1919px) {
       left: 50%;
@@ -168,17 +192,20 @@
   }
 
   .single-space {
-    @apply absolute top-0 left-1/2 overflow-visible z-30 w-[1134px];
-    transform: translateX(-126px);
+    @apply xl-down:h-px xl-down:w-px xl-down:opacity-0 w-full xl:absolute xl:top-0 xl:left-1/2 xl:overflow-visible xl:z-30 xl:w-[1134px];
+    
+    @media (min-width: 1280px) {
+      transform: translateX(-126px);
+    }
   }
 
   .left-carousel-bg {
-    @apply absolute top-0 left-0 h-full w-[388px] z-30 pointer-events-none;
+    @apply absolute top-0 left-0 h-full w-[100px] md:w-[388px] z-30 pointer-events-none;
     background: linear-gradient(90deg, #0E1317 0%, rgba(14, 19, 23, 0) 100%);
   }
 
   .right-carousel-bg {
-    @apply absolute top-0 right-0 h-full w-[388px] z-30 pointer-events-none;
+    @apply absolute top-0 right-0 h-full w-[100px] md:w-[388px] z-30 pointer-events-none;
     background: linear-gradient(-90deg, #0E1317 0%, rgba(14, 19, 23, 0) 100%);
   }
 
@@ -220,7 +247,7 @@
   }
 
   .slide-hider {
-    @apply absolute h-full top-0 left-0 bg-white z-40 w-1/2;
+    @apply xl-down:hidden absolute h-full top-0 left-0 bg-white z-40 w-1/2;
   }
 
   .slide-shadow {
@@ -230,5 +257,16 @@
   .slide-name {
     @apply absolute top-1/2 left-1/2 font-serif text-[55px] text-white leading-[62px] uppercase font-bold z-50 text-center;
     transform: translate(-50%, -50%);
+  }
+
+  .thumb-shadow {
+    @apply absolute w-full h-full top-0 left-0 rounded-xl flex flex-col justify-end p-[30px] lg:px-[99px] lg:py-[60px];
+    background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+  }
+
+  .thumb-title {
+    span {
+      @apply text-interface-primary;
+    }
   }
 }
