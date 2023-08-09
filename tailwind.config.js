@@ -32,7 +32,11 @@ module.exports = {
         },
         'md-down': {
           max: '767px'
-        }
+        },
+        '2xl-down': {
+          max: '1534px'
+        },
+        '3xl': '1700px'
       }
     },
   },

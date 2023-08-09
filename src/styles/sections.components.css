@@ -208,4 +208,21 @@
     @apply block max-w-full w-[914px] absolute bottom-0 right-1/2 -z-10 pointer-events-none;
     transform: translateX(-46px);
   }
+
+  .dish-nav {
+    @apply flex gap-3 items-center;
+
+    @media (max-width: 1769px) {
+      @apply pt-16;
+    }
+
+    @media (min-width: 1770px) {
+      @apply grid absolute top-36 left-1/2;
+      transform: translateX(calc(-50% - 870px));
+    }
+
+    @media (min-width: 1870px) {
+      transform: translateX(calc(-50% - 900px));
+    }
+  }
 }

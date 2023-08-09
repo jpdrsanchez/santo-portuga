@@ -211,47 +211,55 @@
       </div>
     </div>
   </section>
-  <section class="py-14 md:pt-20 md:pb-32 relative">
-    <div class="container grid grid-cols-2 gap-[30px] items-start">
-      <div class="relative">
-        <h2 class="font-serif text-black text-[55px] leading-[60px] font-bold pb-5">
+  <section class="py-14 md:pt-20 md:pb-32 relative 2xl-down:overflow-hidden">
+    <div class="container grid lg:grid-cols-2 gap-[30px] items-start">
+      <div>
+        <h2 class="font-serif text-black text-[55px] leading-[60px] font-bold pb-5 md-down:text-center" data-dish="title">
           Caponata<br />della <span class="text-interface-primary">Nonna</span>
         </h2>
-        <p class="site-text text-black max-w-[616px] font-light tracking-normal pb-[60px]">
+        <p class="site-text text-black md-down:text-center md:max-w-[616px] font-light tracking-normal pb-[60px]" data-dish="text">
           Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.
         </p>
-        <nav class="flex items-center gap-[30px]">
-          <button class="nav-button">
+        <nav class="flex items-center gap-[30px] md-down:justify-center">
+          <button class="nav-button" data-dish="prev">
             <svg width="21" height="34" viewBox="0 0 21 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.13998 18.2063L16.7133 32.4616C17.6198 33.24 19.0066 33.24 19.86 32.4616C20.7133 31.6832 20.7133 30.3696 19.86 29.591L5.8334 16.7954L19.86 3.99979C20.7133 3.17281 20.7133 1.90778 19.86 1.12922C19.0067 0.350809 17.62 0.350809 16.7133 1.12922L1.13998 15.3358C0.286672 16.1628 0.286672 17.4278 1.13998 18.2064L1.13998 18.2063Z" fill="black"/>
             </svg>              
           </button>
-          <button class="nav-button">
+          <button class="nav-button" data-dish="next">
             <svg width="21" height="34" viewBox="0 0 21 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M19.86 18.2063L4.28671 32.4616C3.38017 33.24 1.99344 33.24 1.13998 32.4616C0.28668 31.6832 0.28668 30.3696 1.13998 29.591L15.1666 16.7954L1.13998 3.99979C0.286676 3.17281 0.286676 1.90778 1.13998 1.12922C1.99328 0.350809 3.37996 0.350809 4.28671 1.12922L19.86 15.3358C20.7133 16.1628 20.7133 17.4278 19.86 18.2064L19.86 18.2063Z" fill="black"/>
             </svg>              
           </button>
         </nav>
+        <nav class="dish-nav md-down:justify-center" data-dish="nav">
+          <button class="w-[13px] h-[13px] rounded-full flex bg-white border border-black"></button>
+          <button class="w-[13px] h-[13px] rounded-full flex bg-white border border-black"></button>
+          <button class="w-[13px] h-[13px] rounded-full flex bg-white border border-black"></button>
+          <button class="w-[13px] h-[13px] rounded-full flex bg-white border border-black"></button>
+          <button class="w-[13px] h-[13px] rounded-full flex bg-white border border-black"></button>
+          <button class="w-[13px] h-[13px] rounded-full flex bg-white border border-black"></button>
+        </nav>
       </div>
       <div class="relative">
-        <div class="swiper dish-carousel max-w-[502px] ml-auto">
+        <div class="swiper dish-carousel max-w-[200px] sm:max-w-[300px] md:max-w-[400px] 3xl:max-w-[502px] ml-auto">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./assets/images/dish-one.png" alt="" class="aspect-[502/647] w-full max-w-[502px] block rounded-2xl object-cover object-center" /> 
+            <div class="swiper-slide" data-title="Caponata<br />della <span class='text-interface-primary'>Nonna</span>" data-text="Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.">
+              <img src="./assets/images/dish-one.png" alt="" class="aspect-[502/647] w-full max-w-[400px] 3xl:max-w-[502px] block rounded-2xl object-cover object-center" /> 
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-title="Paccheri alla<br /><span class='text-interface-primary'>Norma</span>" data-text="Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.">
               <img src="./assets/images/dish-two.png" alt="" class="aspect-[502/647] w-full max-w-[502px] block rounded-2xl object-cover object-center" /> 
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-title="Porção de <span class='text-interface-primary'>frango</span><br />empanado" data-text="Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.">
               <img src="./assets/images/dish-three.png" alt="" class="aspect-[502/647] w-full max-w-[502px] block rounded-2xl object-cover object-center" /> 
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-title="Porção de<br /><span class='text-interface-primary'>one rings</span>" data-text="Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.">
               <img src="./assets/images/dish-four.png" alt="" class="aspect-[502/647] w-full max-w-[502px] block rounded-2xl object-cover object-center" /> 
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-title="<span class='text-interface-primary'>Picanha</span> com pure<br />de mandioquinha" data-text="Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.">
               <img src="./assets/images/dish-five.png" alt="" class="aspect-[502/647] w-full max-w-[502px] block rounded-2xl object-cover object-center" /> 
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-title="File de <span class='text-interface-primary'>frango</span><br />sassami" data-text="Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.">
               <img src="./assets/images/dish-six.png" alt="" class="aspect-[502/647] w-full max-w-[502px] block rounded-2xl object-cover object-center" /> 
             </div>
           </div>
