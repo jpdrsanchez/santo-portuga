@@ -21,9 +21,8 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs
 
 ;(() => {
   const singleSwiper = new Swiper('.single-space', {
-    slidesPerView: 3,
+    slidesPerView: 'auto',
     spaceBetween: 30,
-    loop: true,
   })
 })()
 
