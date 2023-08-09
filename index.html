@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <header class="absolute top-0 left-0 w-full pt-12">
-    <div class="container flex items-center justify-between">
+  <header class="absolute top-0 left-0 w-full pt-12 z-50">
+    <div class="container-x flex items-center justify-between">
       <a href="./" class="flex items-center justify-center">
         <span class="sr-only">Santo Portuga</span>
         <svg width="176" height="67" viewBox="0 0 176 67" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,6 +90,7 @@
     </div>
   </header>
   <main class="intro-section">
+    <img src="./assets/images/beer.png" alt="" aria-hidden="true" class="2xl-down:hidden absolute -bottom-[32px] 2xl:-bottom-[50px] left-0 w-full" />
     <div class="container">
       <h1 class="font-serif text-white text-5xl md:text-[70px] font-bold md:leading-[70px] uppercase pb-3 md-down:text-center">
         Doren <span class="text-interface-primary">Ipsum</span> dolor
@@ -242,10 +243,10 @@
         </nav>
       </div>
       <div class="relative">
-        <div class="swiper dish-carousel max-w-[200px] sm:max-w-[300px] md:max-w-[400px] 3xl:max-w-[502px] ml-auto">
+        <div class="swiper dish-carousel max-w-[200px] sm:max-w-[300px] md:max-w-[400px] 2xl:max-w-[452px] ml-auto">
           <div class="swiper-wrapper">
             <div class="swiper-slide" data-title="Caponata<br />della <span class='text-interface-primary'>Nonna</span>" data-text="Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.">
-              <img src="./assets/images/dish-one.png" alt="" class="aspect-[502/647] w-full max-w-[400px] 3xl:max-w-[502px] block rounded-2xl object-cover object-center" /> 
+              <img src="./assets/images/dish-one.png" alt="" class="aspect-[502/647] w-full max-w-[400px] 2xl:max-w-[502px] block rounded-2xl object-cover object-center" /> 
             </div>
             <div class="swiper-slide" data-title="Paccheri alla<br /><span class='text-interface-primary'>Norma</span>" data-text="Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.">
               <img src="./assets/images/dish-two.png" alt="" class="aspect-[502/647] w-full max-w-[502px] block rounded-2xl object-cover object-center" /> 
@@ -342,37 +343,37 @@
       </div>
     </div>
   </section>
-  <!-- <footer class="relative bg-interface-quarternary">
+  <footer class="relative bg-interface-quarternary">
     <div class="py-16">
-      <div class="container grid grid-cols-[1fr_2fr_1fr] gap-[30px] items-center">
+      <div class="container grid xl:grid-cols-[1fr_2fr_1fr] gap-[30px] items-center">
         <div class="relative text-left">
-          <h3 class="text-white font-serif font-bold uppercase text-2xl pb-4">Contatos</h3>
+          <h3 class="text-white font-serif font-bold uppercase text-2xl pb-4 xl-down:text-center">Contatos</h3>
           <ul class="grid gap-2">
-            <li class="grid grid-cols-[auto_1fr] gap-3 items-center">
+            <li class="flex justify-center xl:grid xl:grid-cols-[auto_1fr] gap-3 items-center">
               <div class="flex items-center justify-center w-6 h-6">
                 <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7.99995 0C3.58569 0 0 3.54183 0 7.89549C0 10.0858 1.00689 12.8219 2.4675 15.6514C3.92811 18.4809 5.84891 21.3879 7.71734 23.8572C7.78285 23.9469 7.88791 24 8 24C8.11209 24 8.21715 23.9469 8.28266 23.8572C10.1511 21.3878 12.0719 18.4809 13.5325 15.6514C14.9931 12.8219 16 10.0859 16 7.89549C16 3.54207 12.4143 0 8.00005 0H7.99995ZM7.99995 0.685544C12.0379 0.685544 15.3043 3.91224 15.3043 7.89542C15.3043 9.87297 14.349 12.5583 12.913 15.3404C11.5509 17.9788 9.75696 20.684 7.99983 23.0424C6.24275 20.6837 4.44879 17.9785 3.08669 15.3404C1.65061 12.558 0.695399 9.87266 0.695399 7.89542C0.695399 3.91242 3.96184 0.685544 7.9997 0.685544H7.99995ZM7.99995 3.42803C5.50674 3.42803 3.47818 5.4273 3.47818 7.88453C3.47818 10.3418 5.50674 12.341 7.99995 12.341C10.4932 12.341 12.5217 10.3418 12.5217 7.88453C12.5217 5.4273 10.4932 3.42803 7.99995 3.42803ZM7.99995 4.11357C10.1171 4.11357 11.8261 5.79796 11.8261 7.88453C11.8261 9.9711 10.1171 11.6552 7.99995 11.6552C5.88282 11.6552 4.17376 9.9711 4.17376 7.88453C4.17376 5.79796 5.88282 4.11357 7.99995 4.11357Z" fill="#FCCC13"/>
                 </svg>                  
               </div>
-              <span class="site-text">R. xxxxxx,xxxxx</span>
+              <span class="site-text text-xl font-light">R. xxxxxx,xxxxx</span>
             </li>
-            <li class="grid grid-cols-[auto_1fr] gap-3 items-center">
+            <li class="flex justify-center xl:grid xl:grid-cols-[auto_1fr] gap-3 items-center">
               <div class="flex items-center justify-center w-6 h-6">
                 <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.39271 0.384828C3.90501 -0.127492 4.73551 -0.128785 5.2483 0.384007L8.66381 3.79948C8.66385 3.79952 8.66389 3.79955 8.66393 3.79959C9.17723 4.31259 9.17602 5.14281 8.66365 5.65517L6.90973 7.40907C6.94764 7.48502 6.99435 7.57712 7.04952 7.68322C7.22067 8.01244 7.47275 8.47577 7.79513 9.00949C8.44177 10.0801 9.36287 11.4198 10.4718 12.5292C11.5807 13.6378 12.9203 14.5589 13.9909 15.2056C14.5246 15.528 14.988 15.7801 15.3173 15.9513C15.4234 16.0065 15.5155 16.0532 15.5915 16.0911L17.3454 14.3367L17.3455 14.3366C17.8583 13.8242 18.6887 13.8239 19.2013 14.3364L22.6161 17.7514C23.1283 18.2636 23.1275 19.0937 22.6166 19.6065L20.095 22.1281L20.0863 22.1339C19.4268 22.7664 18.5466 23.0254 17.558 22.998C16.5643 22.9705 15.4388 22.6545 14.2491 22.1165C11.8683 21.0399 9.14662 19.0357 6.55525 16.4445C3.96406 13.8532 1.9599 11.1314 0.883315 8.7507C0.345355 7.56106 0.0294528 6.43569 0.0019506 5.44211C-0.0254887 4.4508 0.235184 3.56864 0.871619 2.90878C0.872912 2.9072 0.874253 2.90558 0.875642 2.90393C0.882597 2.89568 0.891057 2.8863 0.901117 2.87639L3.39271 0.384828C3.39271 0.384824 3.3927 0.384831 3.39271 0.384828ZM0.842768 2.94872C0.842577 2.94901 0.842384 2.94931 0.842384 2.94931L0.842548 2.94906M15.6713 16.5663C15.5065 16.9224 15.5064 16.9224 15.5063 16.9224L15.5061 16.9223L15.5033 16.9209L15.4955 16.9173C15.4887 16.9141 15.479 16.9096 15.4664 16.9036C15.4412 16.8916 15.4044 16.8739 15.3572 16.8508C15.2626 16.8046 15.126 16.7365 14.9552 16.6477C14.6138 16.4702 14.1355 16.2099 13.5851 15.8774C12.4873 15.2143 11.0884 14.2555 9.91681 13.0841L9.91673 13.0841C8.7451 11.912 7.78634 10.5131 7.12327 9.41529C6.79079 8.86484 6.53055 8.38659 6.3531 8.04527C6.26434 7.87454 6.1962 7.73788 6.15 7.64336C6.12689 7.5961 6.10926 7.55935 6.09728 7.53414C6.09337 7.52592 6.09006 7.51892 6.08736 7.51318C6.08592 7.51012 6.08465 7.50742 6.08355 7.50508L6.0799 7.49727L6.07847 7.4942C6.07844 7.49412 6.07841 7.49405 6.43457 7.32923L6.07841 7.49405L5.96334 7.24544L8.10864 5.10016C8.31511 4.8937 8.31503 4.56054 8.10903 4.35472L4.69329 0.939011C4.48777 0.733486 4.15425 0.733289 3.94773 0.939821L1.47236 3.41516C1.46435 3.42482 1.4547 3.43557 1.44325 3.44677C0.985273 3.91749 0.763184 4.57613 0.786553 5.42039C0.810166 6.27348 1.08542 7.29268 1.5985 8.4273C2.62399 10.6951 4.56147 13.3406 7.11024 15.8895C9.65921 18.4383 12.3047 20.3758 14.5726 21.4014C15.7072 21.9145 16.7265 22.1898 17.5797 22.2134C18.4219 22.2368 19.0794 22.016 19.5502 21.5605C19.5633 21.5466 19.576 21.5351 19.5872 21.5258L22.0606 19.0525C22.2669 18.8454 22.2661 18.5115 22.0611 18.3065L18.6463 14.8914C18.6463 14.8914 18.6463 14.8914 18.6463 14.8914C18.4405 14.6857 18.1069 14.6854 17.9003 14.8918L15.7552 17.0375L15.5065 16.9224L15.6713 16.5663ZM1.50386 3.37182C1.50392 3.37174 1.50393 3.37172 1.50386 3.37182V3.37182Z" fill="#FCCC13"/>
                 </svg>                                 
               </div>
-              <span class="site-text">(11)9555-5555</span>
+              <span class="site-text text-xl font-light">(11)9555-5555</span>
             </li>
-            <li class="grid grid-cols-[auto_1fr] gap-3 items-center">
+            <li class="flex justify-center xl:grid xl:grid-cols-[auto_1fr] gap-3 items-center">
               <div class="flex items-center justify-center w-6 h-6">
                 <span class="text-[22px] leading-[22px] text-interface-primary font-thin">@</span>               
               </div>
-              <span class="site-text">santoportuga@contato.com</span>
+              <span class="site-text text-xl font-light break-words wrap-word md-down:text-sm">santoportuga@contato.com</span>
             </li>
           </ul>
         </div>
-        <div class="text-center grid gap-7">
+        <div class="text-center grid gap-7 xl-down:-order-1">
           <div class="flex items-center justify-center">
             <h2 class="sr-only">Santo Portuga</h2>
             <svg width="176" height="67" viewBox="0 0 176 67" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -429,25 +430,34 @@
           </nav>
         </div>
         <div class="text-right">
-          <h3 class="text-white font-serif font-bold uppercase text-2xl pb-4">Horários</h3>
+          <h3 class="text-white font-serif font-bold uppercase text-2xl pb-4 xl-down:text-center">Horários</h3>
           <ul class="grid gap-2">
-            <li>
-              <span class="site-text text-interface-primary">Seg à Sex -</span>
-              <span class="site-text">11h às 23h</span>
+            <li class="site-text text-xl font-light xl-down:text-center">
+              <span class="text-interface-primary">Seg à Sex -</span>
+              <span>11h às 23h</span>
             </li>
-            <li>
-              <span class="site-text text-interface-primary">Sábado -</span>
-              <span class="site-text">13h às 00h</span>
+            <li class="site-text text-xl font-light xl-down:text-center">
+              <span class="text-interface-primary">Sábado -</span>
+              <span>13h às 00h</span>
             </li>
-            <li>
-              <span class="site-text text-interface-primary">Domingo -</span>
-              <span class="site-text">13h às 23h</span>
+            <li class="site-text text-xl font-light xl-down:text-center">
+              <span class="text-interface-primary">Domingo -</span>
+              <span>13h às 23h</span>
             </li>
           </ul>
         </div>
       </div>
     </div>
-  </footer> -->
+    <div class="border-t border-t-interface-primary py-7">
+      <div class="container flex items-center justify-between flex-wrap gap-3 lg-down:flex-col">
+        <p class="site-text text-xl font-light tracking-normal text-center">© Copyright 2023 - Santo Portuga - Todos os Direitos Reservados</p>
+        <a class="site-text text-xl font-light tracking-normal flex items-center gap-1">
+          <span>Desenvolvido por <span class="sr-only">Noweb</span></span>
+          <img class="block w-full max-w-[56px] flex-shrink-0" src="https://www.noweb.io/shared/faviconMono.png" alt="Noweb Publicidade" />
+        </a>
+      </div>
+    </div>
+  </footer>
   <script src="./scripts.js" type="module" async></script>
 </body>
 </html>

@@ -33,10 +33,15 @@ module.exports = {
         'md-down': {
           max: '767px'
         },
+        'lg-down': {
+          max: '1023px'
+        },
+        'xl-down': {
+          max: '1279px'
+        },
         '2xl-down': {
           max: '1534px'
-        },
-        '3xl': '1700px'
+        }
       }
     },
   },
