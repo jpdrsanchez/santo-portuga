@@ -168,6 +168,8 @@
   }
 
   .single-space {
+    @apply absolute top-0 left-1/2 overflow-visible z-30 w-[1134px];
+    transform: translateX(-126px);
   }
 
   .left-carousel-bg {
@@ -215,5 +217,18 @@
   .wrap-word {
     word-wrap: break-word;
     line-break: strict;
+  }
+
+  .slide-hider {
+    @apply absolute h-full top-0 left-0 bg-white z-40 w-1/2;
+  }
+
+  .slide-shadow {
+    background: rgba(0, 0, 0, 0.70);
+  }
+
+  .slide-name {
+    @apply absolute top-1/2 left-1/2 font-serif text-[55px] text-white leading-[62px] uppercase font-bold z-50 text-center;
+    transform: translate(-50%, -50%);
   }
 }
