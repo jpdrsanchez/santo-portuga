@@ -168,16 +168,6 @@
   }
 
   .single-space {
-    .swiper-slide-active {
-      width: 1000px !important;
-    }
-
-    .swiper-slide {
-      height: 664px;
-      width: 358px;
-      position: relative;
-      border-radius: 1rem;
-    }
   }
 
   .left-carousel-bg {
