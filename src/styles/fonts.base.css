@@ -82,4 +82,8 @@
     font-weight: 900;
     font-style: normal;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }

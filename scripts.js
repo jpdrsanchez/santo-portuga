@@ -141,3 +141,32 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs
     dishSwiper.slideNext()
   })
 })()
+
+;(() => {
+  const menuButton = document.querySelector('[data-menu="button"]')
+  const menuBody = document.querySelector('[data-menu="wrapper"]')
+  const menuLinks = document.querySelectorAll('[data-menu="wrapper"] a')
+  const bodyEl = document.documentElement
+
+  menuButton.addEventListener('click', (event) => {
+    event.preventDefault()
+    
+    if (menuBody.dataset.state === 'closed') {
+      menuButton.classList.add('active')
+      menuBody.setAttribute('data-state', 'open')
+      bodyEl.style.overflow = 'hidden'
+    } else {
+      menuButton.classList.remove('active')
+      menuBody.setAttribute('data-state', 'closed')
+      bodyEl.style.overflow = 'auto'
+    }
+  })
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menuButton.classList.remove('active')
+      menuBody.setAttribute('data-state', 'closed')
+      bodyEl.style.overflow = 'auto'
+    })
+  })
+})()
